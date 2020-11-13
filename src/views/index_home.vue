@@ -28,7 +28,7 @@
                 <span slot="title">员工管理</span>
               </el-menu-item>
               <el-menu-item index="4">
-                <span slot="title">招聘和配置</span>
+                <span slot="title"><router-link to="yggl" tag="div">招聘和配置</router-link></span>
               </el-menu-item>
               <el-menu-item index="5">
                 <span slot="title">考勤管理</span>

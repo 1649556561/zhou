@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import DengLu from './views/DengLu.vue'
 import Wdrs from './views/Wdrs.vue'
 import wode from './views/wode.vue'
+import Yggl from './views/Yggl.vue'
 import index_home from './views/index_home.vue'
 
 Vue.use(Router)
@@ -17,7 +18,7 @@ export default new Router({
         },
         {
             path: '/index_home',
-            redirect: 'index_home/wdrs'
+            redirect: 'index_home/wode'
         },
         {
             path: '/index_home',
@@ -31,6 +32,10 @@ export default new Router({
                 path: '/index_home/wode',
                 component: () =>
                     import ('./views/wode.vue')
+            }, {
+                path: '/index_home/yggl',
+                component: () =>
+                    import ('./views/Yggl.vue')
             }]
         },
     ]

@@ -177,7 +177,7 @@
 </template>
 <style scoped>
 .cheshi{
-  height: 700px;
+  height: 650px;
   width: 1500px;
   overflow-x: scroll;
     overflow-y: scroll;
