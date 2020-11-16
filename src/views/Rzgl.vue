@@ -17,7 +17,7 @@
         </div>
         <ul class="ul">
           <li>
-            <img src="../../public/imgaes/13.png" />招聘管理
+            <img src="../../public/imgaes/13.png" /><router-link to="zphpz" tag="span">招聘管理</router-link>
           </li>
           <li>
             <img src="../../public/imgaes/13.png" /><router-link to="rzgl" tag="span">入职管理</router-link>
@@ -36,11 +36,10 @@
       <div class="div1-2">
         <el-table :data="tableData" border style="width: 100%">
           <el-table-column prop="date" label="主题" width="300" class="a"></el-table-column>
-          <el-table-column prop="name" label="申请人" width="120"></el-table-column>
-          <el-table-column prop="address" label="所属部门"  width="150"></el-table-column>
-          <el-table-column prop="address1" label="需求岗位" width="160"></el-table-column>
-          <el-table-column prop="address2" label="需求人数" width="170"></el-table-column>
-          <el-table-column prop="address3" label="希望到岗日期" width="200"></el-table-column>
+          <el-table-column prop="name" label="入职人" width="120"></el-table-column>
+          <el-table-column prop="address" label="入职日期"  width="150"></el-table-column>
+          <el-table-column prop="address1" label="入职部门" width="160"></el-table-column>
+          <el-table-column prop="address2" label="入职岗位" width="170"></el-table-column>
         </el-table>
         <div class="aaa">
           <span class="el-icon-caret-left"></span>  <span>共有4条记录，第1/1页</span> <span class="el-icon-caret-right"></span> 
@@ -86,6 +85,8 @@
 }
 .ul li:nth-of-type(1) {
   margin-top: 70px;
+}
+.ul li:nth-of-type(2) {
   color: deepskyblue;
 }
 .ul li {
@@ -146,12 +147,11 @@ export default {
     return {
       tableData: [
         {
-          date: "招聘申请-刘峰-1000165",
+          date: "aaa招聘申请-刘峰-1000165",
           name: "刘峰",
           address: "生产部",
           address1: "初级工程师",
           address2: "5",
-          address3: "2016/4/30"
         },
         {
           date: "招聘申请-刘峰-1000165",
@@ -159,7 +159,6 @@ export default {
           address: "生产部",
           address1: "初级工程师",
           address2: "5",
-          address3: "2016/4/30"
         },
         {
           date: "招聘申请-刘峰-1000165",
@@ -167,7 +166,6 @@ export default {
           address: "生产部",
           address1: "初级工程师",
           address2: "5",
-          address3: "2016/4/30"
         },
         {
           date: "招聘申请-刘峰-1000165",
@@ -175,7 +173,6 @@ export default {
           address: "生产部",
           address1: "初级工程师",
           address2: "5",
-          address3: "2016/4/30"
         },
         
       ]

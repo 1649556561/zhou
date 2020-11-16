@@ -2,7 +2,7 @@
   <div id="app">
     <div class="zhuye">
       <p class="xinzen">
-        <span>新增员工</span>
+        <span>编辑员工</span>
         <span class="xinzen-yi" @click="fanhui()">
           <span class="el-icon-arrow-left"></span>返回
         </span>
@@ -238,7 +238,7 @@ export default {
   font-size: 20px;
 }
 .xinzen-yi {
-  margin-left: 880px;
+  margin-left: 780px;
   border-radius: 2px;
   border: 1px solid rgb(201, 201, 201);
   padding: 5px;

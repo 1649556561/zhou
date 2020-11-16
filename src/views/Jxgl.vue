@@ -17,33 +17,30 @@
         </div>
         <ul class="ul">
           <li>
-            <img src="../../public/imgaes/13.png" />招聘管理
+            <img src="../../public/imgaes/13.png" />月度绩效考核
           </li>
           <li>
-            <img src="../../public/imgaes/13.png" /><router-link to="rzgl" tag="span">入职管理</router-link>
+            <img src="../../public/imgaes/13.png" />季度绩效考核
           </li>
           <li>
-            <img src="../../public/imgaes/13.png" /><router-link to="zzgl" tag="span">转正管理</router-link>
+            <img src="../../public/imgaes/13.png" />年度绩效考核
           </li>
           <li>
-            <img src="../../public/imgaes/13.png" /><router-link to="gwdd" tag="span">岗位调动管理</router-link>
-          </li>
-          <li>
-            <img src="../../public/imgaes/13.png" /><router-link to="lzgl" tag="span">离职管理</router-link>
+            <img src="../../public/imgaes/13.png" />奖励和处罚
           </li>
         </ul>
       </div>
       <div class="div1-2">
         <el-table :data="tableData" border style="width: 100%">
           <el-table-column prop="date" label="主题" width="300" class="a"></el-table-column>
-          <el-table-column prop="name" label="申请人" width="120"></el-table-column>
-          <el-table-column prop="address" label="所属部门"  width="150"></el-table-column>
-          <el-table-column prop="address1" label="需求岗位" width="160"></el-table-column>
-          <el-table-column prop="address2" label="需求人数" width="170"></el-table-column>
-          <el-table-column prop="address3" label="希望到岗日期" width="200"></el-table-column>
+          <el-table-column prop="name" label="所属部门" width="120"></el-table-column>
+          <el-table-column prop="address" label="被考核人"  width="150"></el-table-column>
+          <el-table-column prop="address1" label="自评分" width="160"></el-table-column>
+          <el-table-column prop="address2" label="主管评分" width="170"></el-table-column>
+          <el-table-column prop="address3" label="考核结果" width="200"></el-table-column>
         </el-table>
         <div class="aaa">
-          <span class="el-icon-caret-left"></span>  <span>共有4条记录，第1/1页</span> <span class="el-icon-caret-right"></span> 
+          <span class="el-icon-caret-left"></span>  <span>共有3条记录，第1/1页</span> <span class="el-icon-caret-right"></span> 
         </div>
       </div>
     </div>
@@ -66,7 +63,7 @@
   border: 1px solid #EBEEF5;
 }
 .app{
-   height: 750px;
+   height: 700px;
   width: 1430px;
   justify-content: space-between;
   white-space: nowrap;
@@ -102,7 +99,7 @@
 }
 .div1-1 {
   border: 1px solid #EBEEF5;
-  height: 700px;
+  height: 650px;
   width: 300px;
 }
 .div1 div {
@@ -146,37 +143,30 @@ export default {
     return {
       tableData: [
         {
-          date: "招聘申请-刘峰-1000165",
-          name: "刘峰",
-          address: "生产部",
-          address1: "初级工程师",
-          address2: "5",
-          address3: "2016/4/30"
+          date: "2018年4月绩效考核单-张旭",
+          name: "销售部",
+          address: "张旭",
+          address1: "92",
+          address2: "0",
+          address3: ""
         },
         {
-          date: "招聘申请-刘峰-1000165",
-          name: "刘峰",
-          address: "生产部",
-          address1: "初级工程师",
-          address2: "5",
-          address3: "2016/4/30"
+          date: "2018年4月绩效考核单-沈华",
+          name: "销售部",
+          address: "沈华",
+          address1: "84",
+          address2: "0",
+          address3: ""
         },
         {
-          date: "招聘申请-刘峰-1000165",
-          name: "刘峰",
-          address: "生产部",
-          address1: "初级工程师",
-          address2: "5",
-          address3: "2016/4/30"
+        date: "2018年4月绩效考核单-李萌",
+          name: "销售部",
+          address: "李萌",
+          address1: "90",
+          address2: "88",
+          address3: "B"
         },
-        {
-          date: "招聘申请-刘峰-1000165",
-          name: "刘峰",
-          address: "生产部",
-          address1: "初级工程师",
-          address2: "5",
-          address3: "2016/4/30"
-        },
+      
         
       ]
     };

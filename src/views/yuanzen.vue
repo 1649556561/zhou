@@ -4,10 +4,10 @@
       <p class="xinzen">
         <span>新增员工</span>
         <span class="xinzen-yi" @click="fanhui()">
-          <span class="el-icon-arrow-left"></span>返回
+          <span class="el-icon-arrow-left"></span><router-link to="zhaopin1" tag="span">返回</router-link>
         </span>
         <span class="xinzen-er" @click="shuaxin()">
-          <span class="el-icon-refresh"></span>刷新
+          <span class="el-icon-refresh"></span><router-link to="zhaopin2" tag="span">刷新</router-link>
         </span>
       </p>
       <p class="fen">
@@ -216,7 +216,7 @@ export default {
   font-size: 20px;
 }
 .xinzen-yi {
-  margin-left: 880px;
+  margin-left: 780px;
   border-radius: 2px;
   border: 1px solid rgb(201, 201, 201);
   padding: 5px;

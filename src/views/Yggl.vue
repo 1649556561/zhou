@@ -14,7 +14,7 @@
       <el-input class="input" v-model="input" placeholder="请输入内容"></el-input>
       <span class="el-icon-search">查找</span>
       <span @click="xinzen()">
-        <span class="el-icon-plus">新增员工</span>
+        <span class="el-icon-plus"><router-link to="yuanzen" tag="span">新增员工</router-link></span>
       </span>
       <span @click="shuaxin()">
         <span class="el-icon-refresh">刷新</span>
@@ -86,7 +86,7 @@
           <el-table-column prop="address" label="从属于"></el-table-column>
           <el-table-column prop="address" label="职务"></el-table-column>
           <el-table-column prop="address" label="入职日期"></el-table-column>
-          <el-table-column prop="address" label="操作"></el-table-column>
+          <el-table-column prop="address" label="操作"><router-link to="yuangai" tag="span"> <el-button type="primary" icon="el-icon-edit" circle></el-button> </router-link><el-button type="danger" icon="el-icon-delete" circle></el-button></el-table-column>
         </el-table>
 
       </div>
@@ -104,7 +104,7 @@ export default {
 </script>
 <style scoped>
 .aa {
-  width: 950px;
+  width: 1000px;
   height: 700px;
   float: left;
   border: 1px solid;
@@ -260,41 +260,94 @@ export default {
       tableData: [
         {
           date: "2016-05-02",
-          name: "王小虎",
+          name: "李莉",
           address: "上海市普陀"
         },
         {
           date: "2016-05-04",
-          name: "王小虎",
+          name: "李莉",
           address: "上海市普陀"
         },
         {
           date: "2016-05-01",
-          name: "王小虎",
+          name: "李莉",
           address: "上海市普陀"
         },
         {
           date: "2016-05-03",
-          name: "王小虎",
+          name: "李莉",
           address: "上海市普陀"
         },
         {
           date: "2016-05-03",
-          name: "王小虎",
+          name: "李莉",
           address: "上海市普陀"
         },
         {
           date: "2016-05-03",
-          name: "王小虎",
+          name: "李莉",
           address: "上海市普陀"
         },
         {
           date: "2016-05-03",
-          name: "王小虎",
+          name: "李莉",
+          address: "上海市普陀"
+        }
+        ,
+        {
+          date: "2016-05-03",
+          name: "李莉",
+          address: "上海市普陀"
+        }
+        ,
+        {
+          date: "2016-05-03",
+          name: "李莉",
+          address: "上海市普陀"
+        },
+        {
+          date: "2016-05-03",
+          name: "李莉",
+          address: "上海市普陀"
+        },
+        {
+          date: "2016-05-03",
+          name: "李莉",
+          address: "上海市普陀"
+        },
+        {
+          date: "2016-05-03",
+          name: "李莉",
+          address: "上海市普陀"
+        },
+        {
+          date: "2016-05-03",
+          name: "李莉",
           address: "上海市普陀"
         }
       ]
     };
-  }
+  },
+  //  data() {
+  //     return {
+  //       options: [{
+  //         value: '选项1',
+  //         label: '黄金糕'
+  //       }, {
+  //         value: '选项2',
+  //         label: '双皮奶'
+  //       }, {
+  //         value: '选项3',
+  //         label: '蚵仔煎'
+  //       }, {
+  //         value: '选项4',
+  //         label: '龙须面'
+  //       }, {
+  //         value: '选项5',
+  //         label: '北京烤鸭'
+  //       }],
+  //       value: ''
+  //     }
+  //   }
 };
 </script>

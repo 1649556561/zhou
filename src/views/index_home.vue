@@ -25,19 +25,19 @@
                 <span slot="title"><router-link to="wode" tag="div">我的人事</router-link></span>
               </el-menu-item>
               <el-menu-item index="3">
-                <span slot="title">员工管理</span>
+                <span slot="title"><router-link to="yggl" tag="div">员工管理</router-link></span>
               </el-menu-item>
               <el-menu-item index="4">
-                <span slot="title"><router-link to="yggl" tag="div">招聘和配置</router-link></span>
+                <span slot="title"><router-link to="zphpz" tag="div">招聘和配置</router-link></span>
               </el-menu-item>
               <el-menu-item index="5">
-                <span slot="title">考勤管理</span>
+                <span slot="title"><router-link to="kqgl" tag="div">考勤管理</router-link></span>
               </el-menu-item>
               <el-menu-item index="6">
-                <span slot="title">福利和关怀</span>
+                <span slot="title"><router-link to="flhgh" tag="div">福利和关怀</router-link></span>
               </el-menu-item>
               <el-menu-item index="7">
-                <span slot="title">绩效管理</span>
+                <span slot="title"><router-link to="jxgl" tag="div">绩效管理</router-link></span>
               </el-menu-item>
               <el-menu-item index="8">
                 <span slot="title">安全退出</span>
@@ -87,8 +87,6 @@ h3 {
   padding: 15px 40px;
   color: white;
 }
-
-
 .div-1 {
   position: absolute;
   top: 100px;
