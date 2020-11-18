@@ -3,11 +3,11 @@
     <div class="zhuye">
       <p class="xinzen">
         <span>编辑员工</span>
-        <span class="xinzen-yi" @click="fanhui()">
-          <span class="el-icon-arrow-left"></span>返回
+        <span class="xinzen-yi">
+          <span class="el-icon-arrow-left"></span><router-link to="yggl" tag="span">返回</router-link>
         </span>
-        <span class="xinzen-er" @click="shuaxin()">
-          <span class="el-icon-refresh"></span>刷新
+        <span class="xinzen-er">
+          <span class="el-icon-refresh"></span><router-link to="yuangai" tag="span">刷新</router-link>
         </span>
       </p>
       <p class="fen">
@@ -212,16 +212,7 @@ export default {
     onSubmit() {
       console.log("submit!");
     },
-    fanhui(){
-        this.$router.push({
-            path:'/yuangon'
-        })
-    },
-    shuaxin(){
-        this.$router.push({
-            path:'/yuangai'
-        })
-    }
+    
   }
 };
 </script>
@@ -231,6 +222,10 @@ export default {
   padding: 0 80px;
 }
 .zhuye {
+    word-break: break-all;
+  overflow-x: scroll;
+  width:1090px;
+height: 710px;;
   background-color: rgb(255, 255, 255);
   padding: 20px 40px;
 }

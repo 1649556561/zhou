@@ -16,7 +16,7 @@
           <span>分类</span>
         </div>
         <ul class="ul">
-          <li>
+         <li>
             <img src="../../public/imgaes/13.png" /><router-link to="jxgl" tag="span">月度绩效考核</router-link>
           </li>
           <li>
@@ -83,6 +83,8 @@
 }
 .ul li:nth-of-type(1) {
   margin-top: 70px;
+}
+.ul li:nth-of-type(3) {
   color: deepskyblue;
 }
 .ul li {
@@ -143,7 +145,7 @@ export default {
     return {
       tableData: [
         {
-          date: "2018年4月绩效考核单-张旭",
+          date: "3332018年4月绩效考核单-张旭",
           name: "销售部",
           address: "张旭",
           address1: "92",

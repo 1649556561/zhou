@@ -177,9 +177,8 @@
 </template>
 <style scoped>
 .cheshi{
-  height: 650px;
+  height: 665px;
   width: 1500px;
-  overflow-x: scroll;
     overflow-y: scroll;
   justify-content: space-between;
   white-space: nowrap;
@@ -207,6 +206,10 @@
   list-style: none;
   line-height: 30px;
   color: deepskyblue;
+}
+.ul li:hover{
+  color: #666666!important;
+  cursor: pointer;
 }
 .abb{
   color: crimson!important;
@@ -253,7 +256,7 @@
 .cheshi div {
   width: 450px;
   height: 360px;
-  border: 1px solid black;
+  border: 1px solid #ebeef5;
   float: left;
 }
 .cheshi div:nth-of-type(7) {

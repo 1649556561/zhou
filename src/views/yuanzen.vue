@@ -206,9 +206,13 @@ export default {
 <style scoped>
 #app {
   background-color: rgb(241, 241, 241);
-  padding: 0 80px;
+  padding: 0 60px;
 }
 .zhuye {
+  word-break: break-all;
+  overflow-x: scroll;
+  width:1090px;
+height: 710px;;
   background-color: rgb(255, 255, 255);
   padding: 20px 40px;
 }
@@ -282,5 +286,8 @@ export default {
 }
 .ji{
     border-radius: 30px;
+}
+.el-form-item__content{
+  height: 35px;
 }
 </style>

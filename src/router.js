@@ -131,6 +131,31 @@ export default new Router({
                     path: '/index_home/wqdw',
                     component: () =>
                         import ('./views/Wqdw.vue')
+                },
+                {
+                    path: '/index_home/ygpx',
+                    component: () =>
+                        import ('./views/Ygpx.vue')
+                },
+                {
+                    path: '/index_home/srgh',
+                    component: () =>
+                        import ('./views/Srgh.vue')
+                },
+                {
+                    path: '/index_home/zxfl',
+                    component: () =>
+                        import ('./views/Zxfl.vue')
+                },
+                {
+                    path: '/index_home/jdjx',
+                    component: () =>
+                        import ('./views/Jdjx.vue')
+                },
+                {
+                    path: '/index_home/ndjx',
+                    component: () =>
+                        import ('./views/Ndjx.vue')
                 }
             ]
         },

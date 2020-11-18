@@ -66,7 +66,7 @@
   border: 1px solid #EBEEF5;
 }
 .app{
-   height: 750px;
+   height: 700px;
   width: 1430px;
   justify-content: space-between;
   white-space: nowrap;
@@ -102,7 +102,7 @@
 }
 .div1-1 {
   border: 1px solid #EBEEF5;
-  height: 700px;
+  height: 650px;
   width: 300px;
 }
 .div1 div {

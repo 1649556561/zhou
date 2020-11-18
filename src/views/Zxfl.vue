@@ -16,7 +16,7 @@
           <span>分类</span>
         </div>
         <ul class="ul">
-          <li>
+         <li>
             <img src="../../public/imgaes/13.png" /><router-link to="flhgh" tag="span">劳动合同</router-link>
           </li>
           <li>
@@ -33,14 +33,14 @@
       <div class="div1-2">
         <el-table :data="tableData" border style="width: 100%">
           <el-table-column prop="date" label="主题" width="300" class="a"></el-table-column>
-          <el-table-column prop="name" label="员工姓名" width="120"></el-table-column>
-          <el-table-column prop="address" label="合同类型" width="150"></el-table-column>
-          <el-table-column prop="address1" label="签订日期" width="160"></el-table-column>
-          <el-table-column prop="address2" label="时间段" width="170"></el-table-column>
+          <el-table-column prop="name" label="专项福利" width="120"></el-table-column>
+          <el-table-column prop="address" label="涉及员工" width="150"></el-table-column>
+          <el-table-column prop="address1" label="实施时间" width="160"></el-table-column>
+          <el-table-column prop="address2" label="预估费用" width="170"></el-table-column>
         </el-table>
         <div class="aaa">
           <span class="el-icon-caret-left"></span>
-          <span>共有6条记录，第1/1页</span>
+          <span>共有1条记录，第1/1页</span>
           <span class="el-icon-caret-right"></span>
         </div>
       </div>
@@ -65,8 +65,8 @@
 }
 .app {
   height: 735px;
-  width: 1330px;
   overflow-y: scroll;
+  width: 1330px;
   justify-content: space-between;
   white-space: nowrap;
   word-break: break-all;
@@ -85,6 +85,8 @@
 }
 .ul li:nth-of-type(1) {
   margin-top: 70px;
+}
+.ul li:nth-of-type(4) {
   color: deepskyblue;
 }
 .ul li {
@@ -145,45 +147,12 @@ export default {
     return {
       tableData: [
         {
-          date: "劳动合同登记-王萍-1000212",
-          name: "范晶,",
-          address: "无固定期限合同",
-          address1: "2016/4/8",
-          address2: "2016/4/9 ~ 2026/4/9",
-        },
-        {
-         date: "劳动合同登记-王萍-1000212",
-          name: "陈有道,",
-          address: "无固定期限合同",
-          address1: "2016/4/8",
-          address2: "2016/4/9 ~ 2026/4/9",
-        },
-        {
-        date: "劳动合同登记-王萍-1000212",
-          name: "王美丽,",
-          address: "无固定期限合同",
-          address1: "2016/4/8",
-          address2: "2016/4/9 ~ 2026/4/9",
-        },
-        {
-          date: "劳动合同登记-王萍-1000212",
-          name: "何以书,",
-          address: "固定期限合同",
-          address1: "2016/4/8",
-          address2: "2016/4/9 ~ 2026/4/9",
-        },{
-          date: "劳动合同登记-王萍-1000212",
-          name: "朱铁桥,",
-          address: "固定期限合同",
-          address1: "2016/4/8",
-          address2: "2016/4/9 ~ 2026/4/9",
-        },{
-          date: "劳动合同登记-王萍-1000212",
-          name: "王萍,,",
-          address: "固定期限合同",
-          address1: "2016/4/8",
-          address2: "2016/4/9 ~ 2026/4/9",
-        },
+          date: "员工专项福利-李萌-1000939",
+          name: "节日福利,",
+          address: "所有人",
+          address1: "2018/6/8",
+          address2: "12000",
+        }
         
       ]
     };

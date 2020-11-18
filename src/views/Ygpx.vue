@@ -17,26 +17,29 @@
         </div>
         <ul class="ul">
           <li>
-            <img src="../../public/imgaes/13.png" /><router-link to="flhgh" tag="span">劳动合同</router-link>
+            <img src="../../public/imgaes/13.png" />
+            <router-link to="flhgh" tag="span">劳动合同</router-link>
           </li>
           <li>
-            <img src="../../public/imgaes/13.png" /><router-link to="ygpx" tag="span">员工培训</router-link>
+            <img src="../../public/imgaes/13.png" />
+            <router-link to="ygpx" tag="span">员工培训</router-link>
           </li>
           <li>
-            <img src="../../public/imgaes/13.png" /><router-link to="srgh" tag="span">生日关怀</router-link>
+            <img src="../../public/imgaes/13.png" />
+            <router-link to="srgh" tag="span">生日关怀</router-link>
           </li>
           <li>
-            <img src="../../public/imgaes/13.png" /><router-link to="zxfl" tag="span">专享福利</router-link>
+            <img src="../../public/imgaes/13.png" />
+            <router-link to="zxfl" tag="span">专享福利</router-link>
           </li>
         </ul>
       </div>
       <div class="div1-2">
         <el-table :data="tableData" border style="width: 100%">
           <el-table-column prop="date" label="主题" width="300" class="a"></el-table-column>
-          <el-table-column prop="name" label="员工姓名" width="120"></el-table-column>
-          <el-table-column prop="address" label="合同类型" width="150"></el-table-column>
-          <el-table-column prop="address1" label="签订日期" width="160"></el-table-column>
-          <el-table-column prop="address2" label="时间段" width="170"></el-table-column>
+          <el-table-column prop="name" label="培训类型" width="120"></el-table-column>
+          <el-table-column prop="address" label="受培训人员" width="300"></el-table-column>
+          <el-table-column prop="address2" label="时间段" width="250"></el-table-column>
         </el-table>
         <div class="aaa">
           <span class="el-icon-caret-left"></span>
@@ -64,9 +67,9 @@
   border: 1px solid #ebeef5;
 }
 .app {
+  overflow-y: scroll;
   height: 735px;
   width: 1330px;
-  overflow-y: scroll;
   justify-content: space-between;
   white-space: nowrap;
   word-break: break-all;
@@ -85,6 +88,8 @@
 }
 .ul li:nth-of-type(1) {
   margin-top: 70px;
+}
+.ul li:nth-of-type(2) {
   color: deepskyblue;
 }
 .ul li {
@@ -109,7 +114,7 @@
 }
 .div1-2 {
   height: 300px;
-  width: 901px;
+  width: 970px;
   margin-left: 20px;
 }
 .wode {
@@ -145,46 +150,41 @@ export default {
     return {
       tableData: [
         {
-          date: "劳动合同登记-王萍-1000212",
-          name: "范晶,",
-          address: "无固定期限合同",
-          address1: "2016/4/8",
-          address2: "2016/4/9 ~ 2026/4/9",
+          date: "员工培训安排-李萌-1000960",
+          name: "技术培训",
+          address: "李萌,沈华,沈涛辉,张旭,张瑶瑶,季道晓,",
+          address2: "2016/5/8 9:00 ~ 2016/5/8 11:00"
         },
         {
-         date: "劳动合同登记-王萍-1000212",
-          name: "陈有道,",
-          address: "无固定期限合同",
-          address1: "2016/4/8",
-          address2: "2016/4/9 ~ 2026/4/9",
+          date: "员工培训安排-李萌-1000960",
+          name: "技术培训",
+          address: "李萌,沈华,沈涛辉,张旭,张瑶瑶,季道晓,",
+          address2: "2016/5/8 9:00 ~ 2016/5/8 11:00"
         },
         {
-        date: "劳动合同登记-王萍-1000212",
-          name: "王美丽,",
-          address: "无固定期限合同",
-          address1: "2016/4/8",
-          address2: "2016/4/9 ~ 2026/4/9",
+          date: "员工培训安排-李萌-1000960",
+          name: "技术培训",
+          address: "李萌,沈华,沈涛辉,张旭,张瑶瑶,季道晓,",
+          address2: "2016/5/8 9:00 ~ 2016/5/8 11:00"
         },
         {
-          date: "劳动合同登记-王萍-1000212",
-          name: "何以书,",
-          address: "固定期限合同",
-          address1: "2016/4/8",
-          address2: "2016/4/9 ~ 2026/4/9",
-        },{
-          date: "劳动合同登记-王萍-1000212",
-          name: "朱铁桥,",
-          address: "固定期限合同",
-          address1: "2016/4/8",
-          address2: "2016/4/9 ~ 2026/4/9",
-        },{
-          date: "劳动合同登记-王萍-1000212",
-          name: "王萍,,",
-          address: "固定期限合同",
-          address1: "2016/4/8",
-          address2: "2016/4/9 ~ 2026/4/9",
+          date: "员工培训安排-李萌-1000960",
+          name: "技术培训",
+          address: "李萌,沈华,沈涛辉,张旭,张瑶瑶,季道晓,",
+          address2: "2016/5/8 9:00 ~ 2016/5/8 11:00"
         },
-        
+        {
+          date: "员工培训安排-李萌-1000960",
+          name: "技术培训",
+          address: "李萌,沈华,沈涛辉,张旭,张瑶瑶,季道晓,",
+          address2: "2016/5/8 9:00 ~ 2016/5/8 11:00"
+        },
+        {
+          date: "员工培训安排-李萌-1000960",
+          name: "技术培训",
+          address: "李萌,沈华,沈涛辉,张旭,张瑶瑶,季道晓,",
+          address2: "2016/5/8 9:00 ~ 2016/5/8 11:00"
+        }
       ]
     };
   }

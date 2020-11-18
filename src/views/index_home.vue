@@ -40,7 +40,7 @@
                 <span slot="title"><router-link to="jxgl" tag="div">绩效管理</router-link></span>
               </el-menu-item>
               <el-menu-item index="8">
-                <span slot="title">安全退出</span>
+                <span slot="title"> <el-button type="text" @click="open">安全退出</el-button></span>
               </el-menu-item>
               <el-menu-item index="9">
                 <span slot="title">组件库</span>
@@ -77,6 +77,7 @@ export default {
 }
 
 .span1 {
+  font-size: 12px;
   display: block;
   margin-top: 5px;
 }
@@ -94,3 +95,26 @@ h3 {
   color: white;
 }
 </style>
+<script>
+  export default {
+    methods: {
+      open() {
+        this.$confirm('您确定要退出吗?', '提示', {
+          confirmButtonText: '确定',
+          cancelButtonText: '取消',
+          type: 'warning'
+        }).then(() => {
+          this.$message({
+            type: 'success',
+            message: '删除成功!'
+          });
+        }).catch(() => {
+          this.$message({
+            type: 'info',
+            message: '已取消删除'
+          });          
+        });
+      }
+    }
+  }
+</script>

@@ -51,7 +51,7 @@
           <el-table-column prop="date" label="主题" width="300" class="a"></el-table-column>
           <el-table-column prop="name" label="申请人" width="120"></el-table-column>
           <el-table-column prop="address" label="所属部门" width="150"></el-table-column>
-          <el-table-column prop="address1" label="目的地" width="160"></el-table-column>
+          <el-table-column prop="address1" label="外出地点" width="160"></el-table-column>
           <el-table-column prop="address2" label="时间段" width="170"></el-table-column>
         </el-table>
         <div class="aaa">

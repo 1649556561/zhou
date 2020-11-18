@@ -82,11 +82,11 @@
         <el-table :data="tableData" style="width: 100%">
           <el-table-column prop="date" label="姓名" width="180"></el-table-column>
           <el-table-column prop="name" label="性别" width="180"></el-table-column>
-          <el-table-column prop="address" label="工号"></el-table-column>
-          <el-table-column prop="address" label="从属于"></el-table-column>
-          <el-table-column prop="address" label="职务"></el-table-column>
-          <el-table-column prop="address" label="入职日期"></el-table-column>
-          <el-table-column prop="address" label="操作"><router-link to="yuangai" tag="span"> <el-button type="primary" icon="el-icon-edit" circle></el-button> </router-link><el-button type="danger" icon="el-icon-delete" circle></el-button></el-table-column>
+          <el-table-column prop="address" label="工号" width="120"></el-table-column>
+          <el-table-column prop="address1" label="从属于" width="120"></el-table-column>
+          <el-table-column prop="address2" label="职务" width="120"></el-table-column>
+          <el-table-column prop="address3" label="入职日期" width="180"></el-table-column>
+          <el-table-column prop="address4" label="操作" width="180"><router-link to="yuangai" tag="span"> <el-button type="primary" icon="el-icon-edit" circle></el-button> </router-link><el-button type="danger" icon="el-icon-delete" circle></el-button></el-table-column>
         </el-table>
 
       </div>
@@ -104,15 +104,15 @@ export default {
 </script>
 <style scoped>
 .aa {
-  width: 1000px;
-  height: 700px;
+  width: 1080px;
+  height: 770px;
   float: left;
-  border: 1px solid;
+  border: 1px solid rgb(226, 226, 226);
+  margin-left: 15px;
 }
 #app {
-  height: 750px;
-  width: 1330px;
-  overflow-x: scroll;
+  height: 730px;
+  width: 1430px;
   overflow-y: scroll;
   justify-content: space-between;
   white-space: nowrap;
@@ -252,6 +252,9 @@ export default {
 .zou-san p span {
   margin-right: 10px;
 }
+.el-table td{
+      border-right: 1px solid #EBEEF5;
+}
 </style>
 <script>
 export default {
@@ -259,72 +262,96 @@ export default {
     return {
       tableData: [
         {
-          date: "2016-05-02",
-          name: "李莉",
-          address: "上海市普陀"
+          date: "李莉",
+          name: "男",
+          address: "Ahz-001",
+          address1: "杭州机构",
+          address2: "分公司经理",
+          address3: "2009/3/13",
         },
         {
-          date: "2016-05-04",
-          name: "李莉",
-          address: "上海市普陀"
+         date: "李莉",
+          name: "男",
+          address: "Ahz-001",
+          address1: "杭州机构",
+          address2: "分公司经理",
+          address3: "2009/3/13",
         },
         {
-          date: "2016-05-01",
-          name: "李莉",
-          address: "上海市普陀"
+        date: "李莉",
+          name: "男",
+          address: "Ahz-001",
+          address1: "杭州机构",
+          address2: "分公司经理",
+          address3: "2009/3/13",
         },
         {
-          date: "2016-05-03",
-          name: "李莉",
-          address: "上海市普陀"
+          date: "李莉",
+          name: "男",
+          address: "Ahz-001",
+          address1: "杭州机构",
+          address2: "分公司经理",
+          address3: "2009/3/13",
         },
         {
-          date: "2016-05-03",
-          name: "李莉",
-          address: "上海市普陀"
+          date: "李莉",
+          name: "男",
+          address: "Ahz-001",
+          address1: "杭州机构",
+          address2: "分公司经理",
+          address3: "2009/3/13",
         },
         {
-          date: "2016-05-03",
-          name: "李莉",
-          address: "上海市普陀"
+         date: "李莉",
+          name: "男",
+          address: "Ahz-001",
+          address1: "杭州机构",
+          address2: "分公司经理",
+          address3: "2009/3/13",
         },
         {
-          date: "2016-05-03",
-          name: "李莉",
-          address: "上海市普陀"
+          date: "李莉",
+          name: "男",
+          address: "Ahz-001",
+          address1: "杭州机构",
+          address2: "分公司经理",
+          address3: "2009/3/13",
         }
         ,
         {
-          date: "2016-05-03",
-          name: "李莉",
-          address: "上海市普陀"
+          date: "李莉",
+          name: "男",
+          address: "Ahz-001",
+          address1: "杭州机构",
+          address2: "分公司经理",
+          address3: "2009/3/13",
         }
         ,
         {
-          date: "2016-05-03",
-          name: "李莉",
-          address: "上海市普陀"
+          date: "李莉",
+          name: "男",
+          address: "Ahz-001",
+          address1: "杭州机构",
+          address2: "分公司经理",
+          address3: "2009/3/13",
         },
         {
-          date: "2016-05-03",
-          name: "李莉",
-          address: "上海市普陀"
+          date: "李莉",
+          name: "男",
+          address: "Ahz-001",
+          address1: "杭州机构",
+          address2: "分公司经理",
+          address3: "2009/3/13",
         },
         {
-          date: "2016-05-03",
-          name: "李莉",
-          address: "上海市普陀"
+         date: "李莉",
+          name: "男",
+          address: "Ahz-001",
+          address1: "杭州机构",
+          address2: "分公司经理",
+          address3: "2009/3/13",
         },
-        {
-          date: "2016-05-03",
-          name: "李莉",
-          address: "上海市普陀"
-        },
-        {
-          date: "2016-05-03",
-          name: "李莉",
-          address: "上海市普陀"
-        }
+        
       ]
     };
   },
